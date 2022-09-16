@@ -22,6 +22,7 @@ public class AllPermutationsII {
 			res.add(new String(array));
 			return;
 		}
+		// use a hashset to deduplicate
 		Set<Character> used = new HashSet<Character>();
 		for(int i = index; i < array.length; i ++) {
 			if(used.add(array[i])) {
